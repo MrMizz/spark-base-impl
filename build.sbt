@@ -19,6 +19,8 @@ scalacOptions ++= Seq(
   "-language:postfixOps"
 )
 
+mainClass in assembly := Some("in.tap.base.spark.impl.Main")
+
 val versionSpark: String = "2.4.0"
 
 libraryDependencies ++= Seq(
